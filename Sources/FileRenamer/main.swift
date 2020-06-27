@@ -4,10 +4,10 @@ import Foundation
 
 struct FileRenamer: ParsableCommand {
 
-    @Argument(help: "The directory to use.")
+    @Argument(help: "Location of WWDC20 videos.")
     var directory: String
 
-    @Argument(help: "The json to use.")
+    @Argument(help: "The location of the WWDC20 information json.")
     var json: String
 
     func run() throws {
