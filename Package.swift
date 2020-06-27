@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FileRenamer",
+    name: "WWDC20 File Renamer",
     platforms: [
         .macOS(.v10_15),
     ],
