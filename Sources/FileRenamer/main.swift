@@ -21,6 +21,7 @@ struct FileRenamer: ParsableCommand {
         let files = try fileManager.contentsOfDirectory(atPath: filesURL.path)
 
         for file in files {
+            guard file.starts(with: "wwdc2020") else { continue }
             var session = file
             session.removeFirst(9)
             session.removeLast(7)
